@@ -1,5 +1,20 @@
 # JAVA语言笔记
 ## 基本语法
+### Java输入输出
+```
+import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);
+String s1 = scanner.next(); //单个字符串（单词）
+String s2 = scanner.nextLine(); //一整行，自动过滤空格tab
+int i = scanner.nextInt(); //其他类型相同
+
+// 注意 hasNext 和 hasNextLine 的区别,同理用for或while接受数组输入
+while (scanner.hasNextInt()&&!endFlag) { // 注意 while 处理多个 case
+  //pass
+}
+
+//对于某些格式化输入，可以使用string类型读入后使用split函数进行分割。
+```
 ### 数组
 **数组定义及初始化**
 java数组中数值类型的默认值为0，char类型的默认值为0，布尔类型的默认值为false，String类型的默认值为null。
