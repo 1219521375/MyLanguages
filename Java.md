@@ -22,6 +22,11 @@ int[] arr = new int[] {1,5,2,4,3};
 Arrays.sort(arr); 
 // arr:[1,2,3,4,5]
 ```
+对于二维数组，需要重写compareto方法，比较简单的情况可以使用lamda表达式。
+```
+int[][] arr;
+Arrays.sort(arr, (o1, o2) -> o1[0] - o2[0]);//以每个元素的第一个元素升序排序
+```
 ### for each
 
 ## 常用类
