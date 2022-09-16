@@ -51,3 +51,16 @@ Arrays.sort(arr, (o1, o2) -> o1[0] - o2[0]);//以每个元素的第一个元素�
 ### for each
 
 ## 常用类
+
+
+## 常用代码模板
+**类的equals方法**
+```
+public boolean equals(Object obj){
+		if (this == obj)  return  true; //引用相同必定一致
+		if (obj == null)  return false; //空应用一定false
+    if (this.getClass() != obj.getClass())  return false; //类不一致一定false
+    MyObject that = (MyObject) obj;
+    //TODO 比较this和that的value
+}
+```
